@@ -2,14 +2,39 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("#{$header-image}");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  position: relative;
+  
+  .masthead-bg {
+    background-image: url("#{$header-image}");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    &::before {
+      content: '';
+      background: #000;
+      opacity: .4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 4;
+    
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -21,6 +46,7 @@ header.masthead {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
+      text-shadow: 4px 4px 0px #fed136;
       margin-bottom: 25px;
       @include heading-font;
     }
@@ -31,6 +57,7 @@ header.masthead {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
+
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;

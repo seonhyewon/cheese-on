@@ -3,7 +3,7 @@
     <div class="container">
 	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
           {%- if site.logo -%}
-            <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
+            <img height="{{ site.logo.height | default: 60 }}" src="{{ '/assets/img/logo.png' | relative_ur }}"/>
           {%- else -%}
             {{ site.title }}
           {%- endif -%}
@@ -48,6 +48,8 @@
   <!-- Header -->
   {% if site.locale and site.locale != "" and site.locale != nil %}
   <header class="masthead">
+    <div class="masthead-bg"></div>
+    
     <div class="container">
       <div class="intro-text">
 	  {%- if site.data.sitetext[site.locale].header.title -%}
