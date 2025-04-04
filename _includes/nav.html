@@ -9,7 +9,7 @@
       {%- if site.logo -%}
       <img
         height="{{ site.logo.height | default: 60 }}"
-        src="{{ '/assets/img/logo.png' | relative_url }}"
+        src="{{ '../assets/img/logo.png' | relative_url }}"
       />
       {%- else -%} {{ site.title }} {%- endif -%}
     </a>
