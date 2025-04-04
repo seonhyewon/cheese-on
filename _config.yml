@@ -14,7 +14,7 @@
 theme: jekyll-agency
 
 url    : "https://seonhyewon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/cheese-on" # the subpath of your site, e.g. /blog
 
 title      : CHEESE ON
 email      : lovemeright1127@gmail.com #this is also the email contact forms will go to
