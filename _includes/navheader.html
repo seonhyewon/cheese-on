@@ -3,7 +3,7 @@
     <div class="container">
 	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
           {%- if site.logo -%}
-            <img height="{{ site.logo.height | default: 60 }}" src="{{ '../assets/img/logo.png' | relative_ur }}"/>
+            <img height="{{ site.logo.height | default: 60 }}" src="{{ site.baseurl }}/{{ '../assets/img/logo.png' | relative_ur }}"/>
           {%- else -%}
             {{ site.title }}
           {%- endif -%}
