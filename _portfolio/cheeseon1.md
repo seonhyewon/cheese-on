@@ -6,7 +6,7 @@ caption: #what displays in the portfolio grid:
   
 #what displays when the item is clicked:
 title: Cheese Cake
-subtitle: subtitle lorem ipsum dolor sit amet consectetur.
+subtitle: subtitle lorem ipsum dolor sit amet consectsetur.
 image: assets/img/portfolio/01-cheeseon.jpg #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
