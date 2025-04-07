@@ -29,13 +29,20 @@ h6 {
   @include heading-font;
 }
 
+.insert-img {
+  
+  display: flex;
+  justify-content: center;
+  img {
+    filter: opacity(.8);
+    
+  }
+}
+
 .page-section {
   padding: 100px 0;
 
-  img.about-img {
-    margin: auto;
-    margin-bottom: 20px;
-  }
+  
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
